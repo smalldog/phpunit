@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/opt/local/bin/php
 <?php
 /* PHPUnit
  *
