@@ -40,7 +40,10 @@ define('PHPUnit_MAIN_METHOD', 'PHPUnit_TextUI_Command::main');
 if (strpos('@php_bin@', '@php_bin') === 0) {
     set_include_path(dirname(__FILE__) . PATH_SEPARATOR . get_include_path());
 }
-
+ob_start();
 require 'PHPUnit/Autoload.php';
 
 PHPUnit_TextUI_Command::main();
+$temp = ob_get_contents();
+ob_end_clean();
+echo $temp;
