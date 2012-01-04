@@ -2,7 +2,7 @@
 /**
  * PHPUnit
  *
- * Copyright (c) 2002-2011, Sebastian Bergmann <sebastian@phpunit.de>.
+ * Copyright (c) 2001-2012, Sebastian Bergmann <sebastian@phpunit.de>.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -37,7 +37,7 @@
  * @package    PHPUnit
  * @subpackage Framework
  * @author     Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright  2002-2011 Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2001-2012 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
  * @link       http://www.phpunit.de/
  * @since      File available since Release 2.0.0
@@ -49,7 +49,7 @@
  * @package    PHPUnit
  * @subpackage Framework
  * @author     Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright  2002-2011 Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2001-2012 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
  * @version    Release: @package_version@
  * @link       http://www.phpunit.de/
@@ -797,7 +797,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Enables or disables the error-to-exception conversion.
      *
      * @param  boolean $flag
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.2.14
      */
     public function convertErrorsToExceptions($flag)
@@ -824,7 +824,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Enables or disables the stopping when an error occurs.
      *
      * @param  boolean $flag
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.5.0
      */
     public function stopOnError($flag)
@@ -840,7 +840,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Enables or disables the stopping when a failure occurs.
      *
      * @param  boolean $flag
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.1.0
      */
     public function stopOnFailure($flag)
@@ -860,7 +860,7 @@ class PHPUnit_Framework_TestResult implements Countable
      *   * Tests that are incomplete or skipped yield no code coverage.
      *
      * @param  boolean $flag
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.5.2
      */
     public function strictMode($flag)
@@ -876,7 +876,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Enables or disables the stopping for incomplete tests.
      *
      * @param  boolean $flag
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.5.0
      */
     public function stopOnIncomplete($flag)
@@ -892,7 +892,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Enables or disables the stopping for skipped tests.
      *
      * @param  boolean $flag
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.1.0
      */
     public function stopOnSkipped($flag)
@@ -928,7 +928,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Sets the timeout for small tests.
      *
      * @param  integer $timeout
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.6.0
      */
     public function setTimeoutForSmallTests($timeout)
@@ -944,7 +944,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Sets the timeout for medium tests.
      *
      * @param  integer $timeout
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.6.0
      */
     public function setTimeoutForMediumTests($timeout)
@@ -960,7 +960,7 @@ class PHPUnit_Framework_TestResult implements Countable
      * Sets the timeout for large tests.
      *
      * @param  integer $timeout
-     * @throws InvalidArgumentException
+     * @throws PHPUnit_Framework_Exception
      * @since  Method available since Release 3.6.0
      */
     public function setTimeoutForLargeTests($timeout)
